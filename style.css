@@ -1,0 +1,43 @@
+body {
+    direction: ltr;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+
+    flex-direction: ;
+    display: flex;
+    /* flex-direction (defult: row;) */
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.flex div {
+    background-color: red;
+    color: aliceblue;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+.float {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.float div {
+    background-color: red;
+    color: aliceblue;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
