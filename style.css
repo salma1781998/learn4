@@ -58,11 +58,21 @@ body {
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, calc(100% / 5));
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    align-content: flex-start;
+    justify-content: space-evenly;
     margin-left: 34%;
     text-align: center;
-    background-color: aqua;
-    color: brown;
+    gap: 10px 10px;
+    background-color: #eee;
+    color: rgb(252, 252, 252);
     width: 600px;
     height: 300px;
+
+}
+
+.parent div {
+    background-color: blue;
+
 }
