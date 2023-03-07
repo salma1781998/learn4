@@ -7,12 +7,19 @@ body {
 }
 
 .flex {
-    g display: flex;
+    display: flex;
     /* flex-direction (defult: row;) */
+    flex-flow: row;
     background-color: #eee;
     width: 600px;
     padding: 20px;
     margin: 20px auto;
+    filter: grayscale(0);
+}
+
+/* filter*/
+.flex:hover {
+    filter: grayscale(100%);
 }
 
 .flex div {
@@ -29,6 +36,12 @@ body {
     width: 600px;
     padding: 20px;
     margin: 20px auto;
+    filter: drop-shadow(0);
+    transition: 3s;
+}
+
+.float:hover {
+    filter: drop-shadow(100px);
 }
 
 .float div {
@@ -38,4 +51,18 @@ body {
     width: 25%;
     text-align: center;
     padding: 20px;
+}
+
+/* gride */
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, calc(100% / 5));
+    margin-left: 34%;
+    text-align: center;
+    background-color: aqua;
+    color: brown;
+    width: 600px;
+    height: 300px;
 }
